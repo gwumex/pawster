@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'ubuntu', sans-serif;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 2rem;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    background-color: white;
+
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    font-size: 2rem;
+    padding: 2rem;
+    color: black;
+    text-align: center;
+
+}
+.linkmain{
+    font-size: 4rem;
+    text-align: center;
+}
+.linkmain > i {
+    font-size: 3rem;
+}
+.link:hover{
+    color: orange;
+}
+
+
+.frontpage{
+    /* background-image: url('./bg11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;     */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+}
+.frontpage1{
+    width: 60%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro{
+    line-height: 8rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+.frontpage2{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+.inputfield{
+    width: 95%;
+    height: 3rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    border: 0;
+}
+.breed{
+    margin-top: 1.5rem;
+}
+
+.btn{
+    font-size: 1.5rem;
+    background-color: orange;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: aliceblue;
+    margin-top: 2rem;
+}
+.btn:hover{
+    color: black;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem;
+}
+.stat{
+    background-color: rgba(128, 128, 128, 0.238);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat > span{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.stat > p{
+    margin-top: 2rem;
+    width: 80%;
+    text-align: center;
+}
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5rem; 
+    background-color: rgba(128, 128, 128, 0.238);
+
+}
+.feature{
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.feature > i{
+    font-size: 8rem;
+    color: orange;
+}
+.feature > p{
+    width: 80%;
+    margin-top: 3rem;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10rem 0; 
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+}
+.search > .btn{
+    margin-top: 5rem;
+
+}
+.search > div > p{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+footer{
+    background-color: rgba(128, 128, 128, 0.238);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem ;
+    align-items: center;
+}
+.socials > a > i{
+    font-size: 3rem;
+    right: 0;
+    margin: 0 1rem;
+    color: orange;
+}
+.socials > a > i:hover{
+
+    color: black;
+}
+footer > span{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px){
+    html{
+        font-size: 8px;
+    }    
+}
+@media only screen and (max-width: 800px){
+    html{
+        font-size: 7px;
+    }    
+}
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 6.5px;
+    }    
+}
+
+@media only screen and (max-width: 520px){
+    html{
+        font-size: 6.5px;
+    }    
+}
