@@ -8,6 +8,9 @@ html{
     font-size: 10px;
     font-family: 'ubuntu', sans-serif;
 }
+body{
+    position: relative;
+}
 li{
     list-style: none;
 }
@@ -41,7 +44,6 @@ a{
     padding: 2rem;
     color: black;
     text-align: center;
-
 }
 .linkmain{
     font-size: 4rem;
@@ -64,6 +66,9 @@ a{
     display: flex;
     flex-direction: row;
     background-color: bisque;
+}
+.dropdown{
+    display: none;
 }
 .frontpage1{
     width: 60%;
@@ -116,16 +121,17 @@ a{
 .stats{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5rem;
 }
 .stat{
     background-color: rgba(128, 128, 128, 0.238);
-    padding: 4rem 2rem;
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
 }
 
 .stat > span{
@@ -198,6 +204,11 @@ footer{
 footer > span{
     font-size: 1.5rem;
 }
+.navmobile{
+    display: none;
+ 
+
+}
 
 @media only screen and (max-width: 1000px){
     html{
@@ -214,9 +225,99 @@ footer > span{
         font-size: 6.5px;
     }    
 }
-
+ /* mobile responsiveness */
 @media only screen and (max-width: 520px){
     html{
-        font-size: 6.5px;
+        font-size: 7px;
     }    
+    .nav{
+        display: none;
+    }
+    .navmobile{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+   
+    }
+    .menubtn{
+        font-size: 3rem;
+        margin-right: 2rem;
+        color: black;
+    }
+    .menubtn:hover{
+        color: orange;
+    }
+    .cancelbtn{
+        margin-left: 28rem;
+        margin-top: 3rem;
+        font-size: 3rem;
+    }
+       
+    .cancelbtn:hover{
+        color: orange;
+    }
+    .menu{
+        margin-top: 2rem;
+    }
+    .dropdown{
+        background-color: white;
+        height: 100%;
+        z-index: 1;
+        width: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    
+    }
+    .dropdown{
+        display: block;
+    }
+    .frontpage{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    .frontpage1{
+        width: 100%;
+    }
+    .frontpage2{
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+}
+
+@media only screen and (max-width: 460px){
+    html{
+        font-size: 7.5px;
+    }    
+    .stats{
+        flex-direction: column;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .socials > a > i{
+        font-size: 2rem;
+        right: 0;
+        margin: 0 0.2rem;
+        color: orange;
+    }
+
+}
+@media only screen and (max-width: 325px){
+    html{
+        font-size: 6.5px;
+    }   
+}
+@media only screen and (max-width: 300px){
+    html{
+        font-size: 5.5px;
+    }   
 }
